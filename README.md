@@ -62,7 +62,7 @@ This will output each supported language bundle.js along with the style sheets i
 `You can define styles for individual React components using import. The good thing about importing styles is that you can define some base styles and import them for component-level styles.`
 
 ## 5. Unit test
-`Assert & Expect
+```Assert & Expect
 
 import { assert, expect } from 'chai';
 ...
@@ -84,7 +84,7 @@ describe('Testing', () => {
         const callback = sandbox.stub();
         ...
     });
-});`
+});```
 ## 6. Coverage Report
 ```Code coverage report is geneated by istanbul. npm run coveralls will submit the coverage report to coveralls.io.
 
