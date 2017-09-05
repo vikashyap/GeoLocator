@@ -1,7 +1,7 @@
 # React
 A Geo Locatior app created in React
 # 1. React
-##The following features are supported:
+## The following features are supported:
 
 ```Functional Component
 
@@ -37,32 +37,32 @@ Import .scss in Component
 import './styles.scss';
 const App = () => <div />;
 ```
-##2. Localization
+## 2. Localization
 We use Yahoo's React Intl (v2.0) library to support localization.
 
-##1. To support a new locale, e.g. ja-JP, copy i18n/en-US.properties to i18n/ja-JP.properties, translate the locale messages.
+## 1. To support a new locale, e.g. ja-JP, copy i18n/en-US.properties to i18n/ja-JP.properties, translate the locale messages.
 
-##2. Specify a LOCALE env var in npm start to debug for a specific locale:
+## 2. Specify a LOCALE env var in npm start to debug for a specific locale:
 
-$ LOCALE=en-US npm start
+`$ LOCALE=en-US npm start
 You can also build the bundle.js for a specific locale:
 
 $ LOCALE=en-US npm run build
-This will output the English bundle.js in dist/en-US folder. Note, if you don't specify LOCALE, default is en-US.
+This will output the English bundle.js in dist/en-US folder. Note, if you don't specify LOCALE, default is en-US.`
 
-3. To build bundle.js for all languages:
+## 3. To build bundle.js for all languages:
 
-$ npm run release
-This will output each supported language bundle.js along with the style sheets in dist/{locale} folder.
+`$ npm run release
+This will output each supported language bundle.js along with the style sheets in dist/{locale} folder.`
 
-##3. Webpack dev server
-When you run your project by npm start, webpack dev server watches the source files for changes and when changes are made the bundle will be recompiled.
+## 3. Webpack dev server
+`When you run your project by npm start, webpack dev server watches the source files for changes and when changes are made the bundle will be recompiled.`
 
-##4. Sass loader
-You can define styles for individual React components using import. The good thing about importing styles is that you can define some base styles and import them for component-level styles.
+## 4. Sass loader
+`You can define styles for individual React components using import. The good thing about importing styles is that you can define some base styles and import them for component-level styles.`
 
-##5. Unit test
-Assert & Expect
+## 5. Unit test
+`Assert & Expect
 
 import { assert, expect } from 'chai';
 ...
@@ -84,8 +84,8 @@ describe('Testing', () => {
         const callback = sandbox.stub();
         ...
     });
-});
-##6. Coverage Report
+});`
+## 6. Coverage Report
 ```Code coverage report is geneated by istanbul. npm run coveralls will submit the coverage report to coveralls.io.
 
 You can setup passing thresholds for statements, branches, functions and lines.
@@ -101,25 +101,25 @@ Lines        : 100% (  6/6  ) Threshold : 90%
 The HTML and lcov reports can be found in the coverage folder.
 ```
 
-#What can you do in the scaffolded project
+# What can you do in the scaffolded project
 
-##1. Run the project
+## 1. Run the project
 Launch webpack dev server
 
 `$ npm start
 then navigate to http://localhost:5000 in your browser.`
 
-##2. Lint js and scss source codes
+## 2. Lint js and scss source codes
 ESLint with React linting options have been enabled.
 
 `$ npm run lint`
-##3. Unit test
+## 3. Unit test
 Start Karma test runner.
 
 `$ npm run test`
 Coverage report will be generated.
 
-##4. Build the bundle
+## 4. Build the bundle
 Build files for production
 
 `$ npm run build`
@@ -127,7 +127,7 @@ Build files for production
 Remove dist and coverage folders
 
 `$ npm run clean`
-For localization feature
+## For localization feature
 1. Hot-load for a lanuage
 $ LOCALE=en-US npm start
 2. Build bundle.js for a language
